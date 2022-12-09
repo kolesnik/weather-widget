@@ -1,7 +1,7 @@
 # Weather Widget React App
 
 ## How to use
-* Put proper API key from  https://openweathermap.org/appid to the App.tsx file `<WeatherWidget apiKey="YourAPIKey"></WeatherWidget>`
+* Put proper API key from  https://openweathermap.org/appid to the src/App.tsx file `<WeatherWidget apiKey="YourAPIKey"></WeatherWidget>`
 * `npm install`
 * `npm run build`
 * open `build\index.html` in your browser and allow access to your location
