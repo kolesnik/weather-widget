@@ -1,0 +1,35 @@
+.state-notification {
+  font-size: 3em;
+  margin-top: 20%;
+}
+
+.weather-widget {
+  width: 11em;
+  border: 1px solid black;
+  padding: 1em;
+  text-align: left;
+
+  .two-column {
+    display: flex;
+    flex-direction: row;
+    clear: both;
+
+    .left {
+      width: 50%;
+    }
+
+    .right {
+      width: 50%;
+      padding-left: 1em;
+    }
+  }
+
+  .full {
+    width: 100%;
+  }
+
+}
+
+.radio-btn-container {
+  display: flex;
+}
