@@ -41,7 +41,7 @@ export const WeatherWidget: FC<WeatherWidgetPorps> = ({ apiKey}) => {
         if (scale === 'F') {
             setTemperature(Math.round(temperature * 1.8 + 32))
         } else {
-            const value = weatherData?.current.temp || ((temperature - 32) / 1.8);
+            const value = weatherData?.current.temp !== undefined? weatherData?.current.temp: ((temperature - 32) / 1.8);
             setTemperature(Math.round(value));
         }
         setScale(scale);

@@ -4,7 +4,7 @@
 * Put proper API key from  https://openweathermap.org/appid to the src/App.tsx file `<WeatherWidget apiKey="YourAPIKey"></WeatherWidget>`
 * `npm install`
 * `npm run build`
-* open `build\index.html` in your browser and allow access to your location
+* `npm run http-server build` and open http://127.0.0.1:8080 in your browser and allow access to your location
 * enjoy your weather widget:
 
 ![Screenshot 2022-12-09 at 18.07.37.png](public%2FScreenshot%202022-12-09%20at%2018.07.37.png)

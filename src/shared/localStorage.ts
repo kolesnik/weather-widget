@@ -1,10 +1,10 @@
 import {GeoLocationSensorState} from "../hooks/useGeoLocation";
 
 function getToday() {
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0');
-    var yyyy = today.getFullYear();
+    const today = new Date();
+    const dd = String(today.getDate()).padStart(2, '0');
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const yyyy = today.getFullYear();
     return dd + '/' + mm + '/' + yyyy;
 }
 
