@@ -1,4 +1,4 @@
-import {FC, useState} from "react";
+import {FC, useEffect, useState} from "react";
 import useFetchWeather from "../hooks/useFetchWeather";
 import "./weatherWidget.scss";
 import {RadioButton} from "./radioButton"
@@ -16,6 +16,11 @@ export const WeatherWidget: FC<WeatherWidgetPorps> = ({ apiKey}) => {
 
     const [scale, setScale] = useState("C");
     const [temperature, setTemperature] = useState(0);
+
+    useEffect(() => {
+        if (weatherData && weatherData.current )
+            setTemperature(Math.round(weatherData?.current.temp));
+    }, [weatherData]);
 
     const getTime = (timeStamp: number | undefined) => {
         if(!timeStamp) return '';
